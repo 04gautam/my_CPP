@@ -1,61 +1,56 @@
 #include <iostream>
 
 using namespace std;
+//
+//class Employee{
+//public:
+//	string Name;
+//	string Company;
+//	int Age;
+//
+//void intro(){
+//	cout<< "name is = " <<Name<<endl;
+//	cout<<"company is = "<<Company<<endl;
+//	cout<< "age is = " <<Age<<endl<<endl<<endl;
+//}
+//};
 
-	void card_enter(){
-	char opt;
-	cout<< "******************"<<endl;
-	cout<< "Enter your card"<<endl;
-	cout<< "*****************"<<endl;
-	cout<< " "<<endl;
+class student{
+	public:
+	string name;
+	string school;
+	int age;
 
-	one_more:
-	cout<<"Is your card detected [y] for yes, [n] for no"<<endl;
-	cin>> opt;
-	if (opt != 'y'){
-		cout<< "******************"<<endl;
-		cout<< "Re enter your card"<<endl;
-		cout<< "******************"<<endl;
-		cout<< " "<<endl;
-		goto one_more;
-	}else{
-	cout<< "OK good now"<<endl;
+
+	void intro(){
+	cout<<"name = "<<name<<endl;
+	cout<<"school = "<<school<<endl;
+	cout<<"age = "<<age<<endl;
 
 	}
-	}
-	void password(){
-	int pass =  8989;
-	int check;
-	re:
-	cout<< "Enter your password"<<endl<<endl;
-	cin>> check;
-	if(check != pass){
-		cout<< "*** wrong password*** try again"<<endl<<endl;
-		goto re;
-	}else{
-	cout<< "Welcome correct password"<<endl<<endl;
-	}
-	}
-		void rupee(){
-		int rs = 1000;
-		int vid_rs;
-		reenter:
-	cout<< "Enter your rupee"<<endl<<endl;
-	cin>> vid_rs;
-	if(vid_rs > rs){
-			cout<< "SORRY   :("<<endl<<endl;
-		cout<<" You don't have this much balance:"<<endl<<endl;
-		goto reenter;
-	}else{
-	cout<< " here is your "<<vid_rs <<" rs"<<endl<<endl;
-	cout<< " Now you have only "<< rs-vid_rs<<" balance in your account: out of "<<rs<<endl<<endl;
-	}
-	}
+};
+
 int main()
 {
-	card_enter();
-	password();
-	rupee();
+	student student1;
 
-    return 0;
+	cin>>student1.name;
+	cin>>student1.school;
+	cin>>student1.age;
+	student1.intro();
+
+
+//	Employee employee1 , employee2;
+//	employee1.Name = "hitlar gautam";
+//	employee1.Company = "GOOGLE";
+//	employee1.Age = 23;
+//
+//	employee1.intro();
+//
+//	employee2.Name = "gautam";
+//	employee2.Company = "AMAZONE";
+//	employee2.Age = 12;
+//
+//	employee2.intro();
+//    return 0;
 }
