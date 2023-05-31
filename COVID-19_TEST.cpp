@@ -148,8 +148,15 @@ int main()
 	}
 	// here are 11 Questions for understanding this COVID-19 test
 	// so logic is like this if greater then 5 is dangerous
-	cout<< "The score is: "<< counter <<endl;
-	if(counter <= 5){
+	// cout<< "The score is: "<< counter <<endl;
+	
+	if(counter == 0){
+		cout<<endl<<"***********************************************"<<endl;
+		cout<< "You have not any symptoms of COVID-19 WHY HAVE YOU CAME HERE"<< endl;
+		cout<<"_____________________________________________________"<<endl;
+	}
+	
+	else if(counter <= 5){
 		cout<<endl<<"***********************************************"<<endl;
 		cout<< "You have not COVID-19 you need to take some medesion"<< endl;
 		cout<<"_____________________________________________________"<<endl;
@@ -170,7 +177,6 @@ int main()
 		cout<< "you should go for Doctor Promptly: "<<endl;
 
 		cout<< "**************************************************"<<endl;
-
 	}
 
 	return 0;
